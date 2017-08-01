@@ -8,3 +8,5 @@ deploy:
   acl: public_read
   on:
     repo: lira/derreteu
+  skip_cleanup: true
+  local_dir: src
