@@ -1,9 +1,8 @@
 language: generic
 deploy:
   provider: s3
-  access_key_id: AKIAI24DLDSJTZWF5PYA
-  secret_access_key:
-    secure: gJ9AsmANJsbwEnrnmfcCyc8DSZv4JEEn9tO6sDhqwHp+PGELMLq7bEdmhQJCFoLHPw4oBU7neOi/73sjPJ2FCstiDwQinE6PhBobHgTSnPrdz3cWEedP0RM1uGG4XRZrPd8Ldb7yhd6bcYwcdXkmHRjttgqReHtbgCgzXxqG+YA=
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: derreteu.com
   acl: public_read
   on:
