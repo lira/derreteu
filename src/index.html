@@ -1,47 +1,30 @@
 <head>
-<script language="JavaScript">
+  <script language="JavaScript">
+    var r_text = [
+      ["503 Service Temporarily Derretation", "Service Temporarily Derretation", "The server is temporarily fritation to service your request due to maintenance downtime or capacity problems. Please try again later."],
+      ["503 Service Temporarily Unayralacmaya", "Service Temporarily Unayralacmaya", "The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later."],
+      ["500 MySQL is Gonorreia", "MySQL is Gonorreia", "The MySQL server is doidom unable to service your request due to maintenance downtime or capacity problems. Please try again later."],
+      ["1992 Street Fighter Error", "Street Fighter Error", "The server is shuryuken reppa unable to service your request due to maintenance downtime or capacity problems. Please try again later."],
+      ["500 Your Sister has Gone Away", "Your Sister has Gone Away", "The server is tarantinator to service your request due to maintenance downtime or capacity problems. Please try again later."]
+    ];
 
-<!--
-var r_text = new Array ();
-r_text[0] = new Array();
-r_text[0][0] = "503 Service Temporarily Derretation";
-r_text[0][1] = "Service Temporarily Derretation";
-r_text[0][2] = "The server is temporarily fritation to service your request due to maintenance downtime or capacity problems. Please try again later.";
+    var i = Math.floor(5 * Math.random());
 
-r_text[1] = new Array();
-r_text[1][0] = "503 Service Temporarily Unayralacmaya";
-r_text[1][1] = "Service Temporarily Unayralacmaya";
-r_text[1][2] = "The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.";
+    // Define o título da página
+    document.addEventListener("DOMContentLoaded", function() {
+      document.title = r_text[i][0];
+      document.getElementById("error-title").textContent = r_text[i][1];
+      document.getElementById("error-description").textContent = r_text[i][2];
+    });
+  </script>
 
-r_text[2] = new Array();
-r_text[2][0] = "500 MySQL is Gonorreia";
-r_text[2][1] = "MySQL is Gonorreia";
-r_text[2][2] = "The MySQL server is doidom unable to service your request due to maintenance downtime or capacity problems. Please try again later.";
-
-r_text[3] = new Array();
-r_text[3][0] = "1992 Street Fighter Error";
-r_text[3][1] = "Street Fighter Error";
-r_text[3][2] = "The server is shuryuken reppa unable to service your request due to maintenance downtime or capacity problems. Please try again later.";
-
-r_text[4] = new Array();
-r_text[4][0] = "500 Your Sister has Gone Away";
-r_text[4][1] = "Your Sister has Gone Away";
-r_text[4][2] = "The server is tarantinator to service your request due to maintenance downtime or capacity problems. Please try again later.";
-
-var i = Math.floor(5*Math.random())
-
-//alert(i);
-document.write("<title>"+r_text[i][0]+"</title>");
-//-->
-
-</script>
-<meta name="description" content="Derreteu.com o site mais derretido de doido da internet, constantemente fora do ar!" />
-<meta name="keywords" content="derreter, derreteu, derretendo, fritando, assando, psy, rave, brisa, noia, loucura, pes" />
-
+  <meta name="description" content="Derreteu.com o site mais derretido de doido da internet, constantemente fora do ar!" />
+  <meta name="keywords" content="derreter, derreteu, derretendo, fritando, assando, psy, rave, brisa, noia, loucura, pes" />
 </head>
 <body>
-	<h1><script>document.write(r_text[i][1])</script></h1>
-	<script>document.write(r_text[i][2])</script>
+  <h1 id="error-title"></h1>
+  <p id="error-description"></p>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H55FCT120"></script>
   <script>
